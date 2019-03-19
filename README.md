@@ -1,2 +1,4 @@
 # pd-mouse-trial
-mouse tracking in Pure Data, explorative
+
+mousepad: mouse tracking widget for Pure Data.
+Unstable API, do not use in your projects.
