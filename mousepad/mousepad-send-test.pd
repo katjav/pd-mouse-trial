@@ -1,0 +1,55 @@
+#N canvas 361 325 599 406 10;
+#X msg 47 154 status;
+#X obj 30 261 mousepad 100 80 \$0-from-pad 1005-oops #DDDDDD;
+#X obj 326 30 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
+-1;
+#X obj 326 56 \$0;
+#X text 19 10 set send and receive names;
+#X msg 159 174 receive to-pad;
+#X msg 160 148 send from-pad;
+#X msg 158 223 receive;
+#X symbolatom 30 64 20 0 0 0 - - -;
+#X symbolatom 160 64 20 0 0 0 - - -;
+#X msg 160 89 receive \$1;
+#X msg 30 91 send \$1;
+#X obj 30 36 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
+-1;
+#X obj 160 34 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144 -1
+-1;
+#X text 208 224 empty name;
+#X msg 326 109 send \$1-from-mousepad;
+#X floatatom 338 83 5 0 0 0 - - -;
+#X text 355 55 will set expanded \$0;
+#X text 326 132 not useful unless repeated at every load;
+#X msg 161 120 send;
+#X obj 327 172 r from-pad;
+#X obj 327 204 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X obj 155 339 s to-pad;
+#X msg 155 305 status;
+#X msg 158 200 receive to-mousepad;
+#X obj 240 336 s to-mousepad;
+#X msg 240 298 status;
+#X obj 406 324 mousepad 50 50 empty to-mousepad #DDDDDD;
+#X msg 406 295 receive to-mousepad;
+#X text 148 259 \$0 names set with symbol box will be saved unexpanded.
+;
+#X connect 0 0 1 0;
+#X connect 2 0 3 0;
+#X connect 3 0 15 0;
+#X connect 3 0 16 0;
+#X connect 5 0 1 0;
+#X connect 6 0 1 0;
+#X connect 7 0 1 0;
+#X connect 8 0 11 0;
+#X connect 9 0 10 0;
+#X connect 10 0 1 0;
+#X connect 11 0 1 0;
+#X connect 12 0 8 0;
+#X connect 13 0 9 0;
+#X connect 19 0 1 0;
+#X connect 20 0 21 0;
+#X connect 23 0 22 0;
+#X connect 24 0 1 0;
+#X connect 26 0 25 0;
+#X connect 28 0 27 0;

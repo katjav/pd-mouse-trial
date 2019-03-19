@@ -1,0 +1,21 @@
+#N canvas 90 181 794 460 10;
+#X obj 50 50 bng 50 250 50 0 empty empty empty 17 7 0 10 -262144 -1
+-1;
+#X obj 100 100 mousepad 50 50 \$0-from-pad empty #DDDDDD;
+#X msg 166 61 pos \$1 \$2;
+#X msg 166 15 100 100;
+#X msg 176 37 50 100;
+#X obj 259 16 r \$0-from-pad;
+#X obj 259 45 route drag;
+#X obj 259 73 unpack;
+#X floatatom 259 100 4 0 0 0 - - -;
+#X floatatom 292 100 4 0 0 0 - - -;
+#X text 40 176 Zoom the window and check if position scales properly.
+Nominal size of the object should remain unchanged.;
+#X connect 2 0 1 0;
+#X connect 3 0 2 0;
+#X connect 4 0 2 0;
+#X connect 5 0 6 0;
+#X connect 6 0 7 0;
+#X connect 7 0 8 0;
+#X connect 7 1 9 0;

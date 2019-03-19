@@ -1,0 +1,16 @@
+#N canvas 324 242 548 451 10;
+#X obj 53 279 mousepad 71 104 empty empty #DDDDDD;
+#X obj 53 38 mousepad 100 100 empty empty #DDDDDD;
+#X obj 53 152 route drag;
+#X msg 53 179 size \$1 \$2;
+#X obj 189 252 vsl 71 104 0 127 0 0 empty empty empty 0 -9 0 10 -262144
+-1 -1 0 1;
+#X msg 63 250 status;
+#X text 163 41 < use this mousepad to set size of the other mousepad
+and slider. This method for resizing is also used in mousepad's properties
+dialog.;
+#X connect 1 0 2 0;
+#X connect 2 0 3 0;
+#X connect 3 0 0 0;
+#X connect 3 0 4 0;
+#X connect 5 0 0 0;

@@ -1,0 +1,50 @@
+#N canvas 376 139 445 595 10;
+#X obj 109 326 mousepad 50 50 \$0-from-pad \$0-from-mousepad #DDDDDD
+;
+#X symbolatom 27 201 25 0 0 0 - - -;
+#X msg 27 293 send \$1;
+#X msg 109 293 status;
+#X symbolatom 212 203 25 0 0 0 - - -;
+#X msg 212 293 receive \$1;
+#X obj 212 325 r \$0-from-pad;
+#X obj 212 351 route drag;
+#X obj 212 376 unpack;
+#X floatatom 212 401 5 0 0 0 - - -;
+#X obj 311 352 f \$0;
+#X floatatom 311 378 5 0 0 0 - - -;
+#X obj 311 327 loadbang;
+#X msg 44 234 set \$1;
+#X msg 44 260 \\\$0-from-pad;
+#X msg 226 233 set \$1;
+#X msg 226 259 \\\$0-from-mousepad;
+#X msg 155 513 send \\\$0-from-pad;
+#X obj 155 538 mousepad 20 20 empty empty #DDDDDD;
+#X text 24 51 [mousepad 30 30 \$0-from-pad \$0-to-pad];
+#X text 26 19 The [mousepad] object can be initialized with dollarzero
+names like:;
+#X text 25 450 Update for Pd 0.49: it is now possible to type the backslash
+in a message box or comment. Moreover \, there's no need to type the
+backslash in a symbol box when using dollarzero because it will be
+prepended automatically.;
+#X text 26 84 When setting dollarzero names after intialization \,
+the escape character (backslash) must be used or else the expanded
+name will be stored To my knowledge there's only one method to type
+an escaped dollar sign in pd and that is via the symbol gatom. Set
+an escaped dollarzero send or receive name \, save \, close and reopen
+a few times to verify that the setting is preserved. The status message
+makes mousepad print its settings to pd window.;
+#X connect 1 0 2 0;
+#X connect 1 0 13 0;
+#X connect 2 0 0 0;
+#X connect 3 0 0 0;
+#X connect 4 0 5 0;
+#X connect 4 0 15 0;
+#X connect 5 0 0 0;
+#X connect 6 0 7 0;
+#X connect 7 0 8 0;
+#X connect 8 0 9 0;
+#X connect 10 0 11 0;
+#X connect 12 0 10 0;
+#X connect 13 0 14 0;
+#X connect 15 0 16 0;
+#X connect 17 0 18 0;

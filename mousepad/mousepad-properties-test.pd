@@ -1,0 +1,19 @@
+#N canvas 419 142 502 512 10;
+#X obj 193 351 mousepad 115 122 from-pad empty #FFCC00;
+#X obj 65 329 mousepad 53 66 empty empty #DDDDDD;
+#X text 26 82 Properties that can be set:;
+#X text 24 115 - width (by typing / dragging the 'width' numbox);
+#X text 23 137 - height (by typing / dragging the 'height' numbox)
+;
+#X text 23 161 - width & height (by dragging the little mousepad in
+properties dialog), f 72;
+#X text 23 184 - send name;
+#X text 23 206 - receive name;
+#X text 24 229 - mousepad fill color (by clicking a color or using
+the color composer), f 72;
+#X text 28 268 Different color palettes can be selected \, among which
+a user-loadable custom palette. The [mousepad] object does not provide
+a label.;
+#X text 22 21 Right-click an object to open its properties dialog which
+is an abstraction that is supposed to sit in the same directory as
+the binary (otherwise it can't be found).;

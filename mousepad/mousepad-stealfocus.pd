@@ -1,0 +1,27 @@
+#N canvas 99 304 495 414 10;
+#X obj 94 156 mousepad 128 128 empty empty #DDDDDD;
+#X obj 109 106 bng 100 250 50 0 empty empty empty 17 7 0 10 -228856
+-260097 -1;
+#X text 60 21 If pd objects are stacked on top of each other \, the
+'lowest' object (that is the first instantiated) will get mouse focus.
+;
+#X obj 94 297 route drag;
+#X obj 94 331 unpack;
+#X floatatom 94 354 4 0 0 0 - - -;
+#X floatatom 127 354 4 0 0 0 - - -;
+#X obj 283 102 bng 100 250 50 0 empty empty empty 17 7 0 10 -228856
+-260097 -1;
+#X obj 268 158 mousepad 128 128 empty empty #DDDDDD;
+#X obj 268 299 route drag;
+#X obj 268 333 unpack;
+#X floatatom 268 356 4 0 0 0 - - -;
+#X floatatom 301 357 4 0 0 0 - - -;
+#X text 162 67 Try at the overlap:;
+#X connect 0 0 3 0;
+#X connect 3 0 4 0;
+#X connect 4 0 5 0;
+#X connect 4 1 6 0;
+#X connect 8 0 9 0;
+#X connect 9 0 10 0;
+#X connect 10 0 11 0;
+#X connect 10 1 12 0;
