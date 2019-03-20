@@ -50,6 +50,7 @@
 
 #ifdef MSW
 #include <io.h>
+#include <fcntl.h>
 #else
 #include <unistd.h>
 #include <sys/stat.h> // for file open
